@@ -6,12 +6,15 @@ module.exports = {
     },
     devServer: {
         inline: true,
-        port: 3333
+        port: 3333,
+        stats: {
+            warnings: false
+        }
     },
     module: {
         loaders: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 loader: 'babel',
                 query: {
@@ -19,5 +22,23 @@ module.exports = {
                 }
             }
         ]
+    },
+//    externals: [{
+//        'react': {
+//            root: 'React',
+//            commonjs2: 'react',
+//            commonjs: 'react',
+//            amd: 'react'
+//        }
+//    }, {
+//        'react-dom': {
+//            root: 'ReactDOM',
+//            commonjs2: 'react-dom',
+//            commonjs: 'react-dom',
+//            amd: 'react-dom'
+//        }
+//    }],
+    stats: {
+        warnings: false
     }
 };
