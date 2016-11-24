@@ -28,5 +28,8 @@ import ReactDOM from 'react-dom';
 //import ComponentOrder from './component/ComponentOrder.jsx';
 //ReactDOM.render(<ComponentOrder />, document.getElementById('app'));
 
-import ComponentRefReuse from './component/ComponentRefReuse.jsx';
-ReactDOM.render(<ComponentRefReuse />, document.getElementById('app'));
+//import ComponentRefReuse from './component/ComponentRefReuse.jsx';
+//ReactDOM.render(<ComponentRefReuse />, document.getElementById('app'));
+
+import MapArray from './component/MapArray.jsx';
+ReactDOM.render(<MapArray />, document.getElementById('app'));
