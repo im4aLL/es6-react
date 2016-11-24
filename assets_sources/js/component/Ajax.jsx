@@ -24,7 +24,7 @@ class Ajax extends React.Component {
     render() {
         var lists = null;
         
-        if( this.state.response ) {     
+        if( this.state.response && this.state.response.data ) {     
             lists = this.state.response.data.map((result) => {
                 return <List key={result.id} text={result.text}></List>
             })
@@ -56,6 +56,10 @@ class Ajax extends React.Component {
         $http.ajaxGet(uri)
             .then(JSON.parse)
             .then((data) => this.setState({ response: data }));
+    }
+    
+    componentWillMount() {
+        this.setState({ response: null });
     }
     
 }
