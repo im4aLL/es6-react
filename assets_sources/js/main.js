@@ -31,5 +31,8 @@ import ReactDOM from 'react-dom';
 //import ComponentRefReuse from './component/ComponentRefReuse.jsx';
 //ReactDOM.render(<ComponentRefReuse />, document.getElementById('app'));
 
-import MapArray from './component/MapArray.jsx';
-ReactDOM.render(<MapArray />, document.getElementById('app'));
+//import MapArray from './component/MapArray.jsx';
+//ReactDOM.render(<MapArray />, document.getElementById('app'));
+
+import Ajax from './component/Ajax.jsx';
+ReactDOM.render(<Ajax />, document.getElementById('app'));
